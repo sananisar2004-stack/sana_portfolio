@@ -67,7 +67,8 @@ a:hover{
 
 .t1{
 
-    width:500px;
+    width:100%;
+    max-width:500px;
     animation: slideLeft 1.5s ease;
 
 }
@@ -363,7 +364,9 @@ a:hover{
 }
 
 .contact-container{
-    width:700px;
+
+    width:100%;
+    max-width:700px;
     padding:40px;
     border-radius:25px;
     background:rgba(255,255,255,0.05);
@@ -429,105 +432,186 @@ footer{
    Responsive Design
 =========================== */
 
-@media (max-width: 768px) {
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media screen and (max-width:768px){
+
+    /* Navigation */
 
     nav{
-        flex-direction: column;
-        padding: 15px;
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .logo{
+        margin-bottom:10px;
+        font-size:24px;
     }
 
     .menu{
-        gap: 15px;
-        padding-right: 0;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 10px;
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+        padding-right:0;
     }
 
     .menu a{
-        font-size: 16px;
+        font-size:16px;
     }
 
+
+    /* Home */
+
     .one{
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 120px 20px 60px;
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:160px 20px 60px;
+        gap:40px;
     }
 
     .t1{
-        width: 100%;
+        width:100%;
     }
 
     .t1 h1{
-        font-size: 40px;
+        font-size:34px;
     }
 
     .t1 h2{
-        font-size: 24px;
+        font-size:22px;
     }
 
     .t1 p{
-        font-size: 16px;
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .btn{
+        padding:10px 22px;
+        margin:10px;
     }
 
     .img img{
-        width: 220px;
-        height: 220px;
-        margin-bottom: 30px;
+        width:220px;
+        height:220px;
     }
 
+
+    /* Section headings */
+
+    #about h1,
+    #skills h1,
+    #projects h1{
+        font-size:36px;
+        margin-bottom:35px;
+    }
+
+    #contact h2{
+        font-size:36px;
+        margin-bottom:35px;
+    }
+
+
+    /* About */
+
     #about{
-        padding: 80px 20px;
+        padding:70px 20px;
     }
 
     .t2{
-        flex-direction: column;
-        text-align: center;
+        flex-direction:column;
+        gap:30px;
     }
 
     .image img{
-        width: 220px;
+        width:220px;
     }
 
     .t3{
-        max-width: 100%;
-        padding: 20px;
+        width:100%;
+        max-width:100%;
+        padding:20px;
+        text-align:justify;
     }
 
+
+    /* Skills */
+
     #skills{
-        padding: 80px 20px;
+        padding:70px 20px;
     }
 
     .skills-container{
-        gap: 15px;
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
     }
 
     .card{
-        width: 100%;
-        text-align: center;
-        padding: 20px;
+        width:100%;
+        padding:18px;
+        font-size:15px;
     }
 
+
+    /* Projects */
+
     #projects{
-        padding: 80px 20px;
+        padding:70px 20px;
+    }
+
+    .project-container{
+        gap:30px;
     }
 
     .project-card{
-        width: 100%;
-        max-width: 320px;
+        width:100%;
+        max-width:340px;
     }
 
+    .project-card img{
+        height:180px;
+    }
+
+
+    /* Contact */
+
     #contact{
-        padding: 80px 20px;
+        padding:70px 20px;
     }
 
     .contact-container{
-        width: 100%;
-        padding: 20px;
+        width:100%;
+        max-width:100%;
+        padding:20px;
     }
+
+    .contact-item{
+        gap:15px;
+        padding:15px;
+    }
+
+    .contact-item i{
+        font-size:22px;
+    }
+
+    .social-icons{
+        gap:20px;
+    }
+
+    .social-icons a{
+        font-size:26px;
+    }
+
+
+    /* Footer */
 
     footer{
-        padding: 15px;
+        padding:15px;
+        font-size:14px;
     }
-}
 
+}
