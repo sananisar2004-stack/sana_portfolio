@@ -425,4 +425,109 @@ footer{
     background:#0d0d0d;
     width: 100%;
 }
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media (max-width: 768px) {
+
+    nav{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .menu{
+        gap: 15px;
+        padding-right: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .menu a{
+        font-size: 16px;
+    }
+
+    .one{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 120px 20px 60px;
+    }
+
+    .t1{
+        width: 100%;
+    }
+
+    .t1 h1{
+        font-size: 40px;
+    }
+
+    .t1 h2{
+        font-size: 24px;
+    }
+
+    .t1 p{
+        font-size: 16px;
+    }
+
+    .img img{
+        width: 220px;
+        height: 220px;
+        margin-bottom: 30px;
+    }
+
+    #about{
+        padding: 80px 20px;
+    }
+
+    .t2{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image img{
+        width: 220px;
+    }
+
+    .t3{
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    #skills{
+        padding: 80px 20px;
+    }
+
+    .skills-container{
+        gap: 15px;
+    }
+
+    .card{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #projects{
+        padding: 80px 20px;
+    }
+
+    .project-card{
+        width: 100%;
+        max-width: 320px;
+    }
+
+    #contact{
+        padding: 80px 20px;
+    }
+
+    .contact-container{
+        width: 100%;
+        padding: 20px;
+    }
+
+    footer{
+        padding: 15px;
+    }
+}
 
